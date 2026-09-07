@@ -1,14 +1,18 @@
-# Alles auf https://rundok.de umleiten (www, .app, .info, http)
 RewriteEngine On
-RewriteCond %{HTTPS} off [OR]
+
+# www und fremde Hostnamen auf rundok.de umleiten
 RewriteCond %{HTTP_HOST} !^rundok\.de$ [NC]
 RewriteRule ^ https://rundok.de%{REQUEST_URI} [L,R=301]
+
+# HTTPS erzwingen: die zwei Zeilen erst einkommentieren, wenn das SSL-Zertifikat
+# bei IONOS als "aktiv" angezeigt wird, sonst laufen Besucher in eine Zertifikatswarnung.
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://rundok.de%{REQUEST_URI} [L,R=301]
 
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  Header always set Strict-Transport-Security "max-age=31536000"
 </IfModule>
 
 <IfModule mod_expires.c>
