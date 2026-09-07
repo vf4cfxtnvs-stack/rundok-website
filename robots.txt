@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rundok.de/sitemap.xml
