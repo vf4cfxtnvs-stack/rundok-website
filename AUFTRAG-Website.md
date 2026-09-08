@@ -58,6 +58,17 @@ alt**. Datenhoheit: **Kein Datenbank-Gefängnis**, **Wo KI mitläuft und wo nich
 Pläne nachlegen, Freimelden ohne Zugang, Berichte im Word korrigieren. Alle vier Wege
 existieren heute. Konzept dahinter: `begehung/KONZEPT-Service-Blaetter.md`.
 
+### 1.4 Nachtrag 08.09.2026
+
+- Prüfstand-Kachel aus dem Cockpit-Reiter in den Abschnitt „Mitarbeiten“ verschoben
+  (Bernds Entscheidung). Der Cockpit-Reiter hat jetzt 13 Kacheln und einen Schlusssatz,
+  der auf `#mitarbeiten` zeigt.
+- „Angebot binnen 48 Stunden“ → „Angebot innerhalb weniger Tage“.
+- Fußzeile „Stand“ auf den echten Stand gesetzt: App iOS 1.11, Android 0.48, Cockpit 1.60
+  (vorher 1.10 / 0.43 / 1.56). **Diese Zeile bei jedem Durchgang nachziehen** — die Quelle
+  sind `MARKETING_VERSION` in der Xcode-Projektdatei, `versionName` in
+  `app/build.gradle.kts` und der oberste Eintrag der `VERSIONS_LOG` des Cockpits.
+
 ---
 
 ## 2. Offen — bitte im nächsten Durchgang erledigen
@@ -82,11 +93,12 @@ beschreibend („Kachelwand der Sofort-Meldung mit 18 Symptom-Kacheln“). Keine
 
 1. **Name und Domain: entschieden.** Es bleibt **rundok.de**, Marke RUNDOK, Logo RUN + DOK
    (Bernd am 08.09.2026). Nichts umbenennen; „run-dog“ war nur die Aussprache im Diktat.
-2. **„Angebot binnen 48 Stunden“** im Preisteil ist eine Selbstverpflichtung ohne
-   Vorbehalt. Entweder halten wollen oder auf „innerhalb weniger Tage“ ändern.
-3. **Prüfstand-Kachel** steht im Reiter „Cockpit“, obwohl der Kunde dort klickt. Seit es
-   den Abschnitt „Mitarbeiten“ gibt, gehört sie inhaltlich dorthin (im Cockpit-Reiter kann
-   ein Satz stehen bleiben: „Das Blatt dafür erzeugt die Zentrale“).
+2. **„Angebot binnen 48 Stunden“: entschieden.** Steht seit 08.09.2026 als „Angebot
+   innerhalb weniger Tage“ in `index.html` — nichts mehr zu tun.
+3. **Prüfstand-Kachel: erledigt.** Sie ist am 08.09.2026 aus dem Reiter „Cockpit“
+   verschwunden; der Abschnitt „Mitarbeiten“ führt sie als „Befunde prüfen und
+   umformulieren — der Prüfstand“. Im Cockpit-Reiter steht dafür ein Schlusssatz mit
+   Sprungmarke auf `#mitarbeiten`. Nicht rückgängig machen.
 
 ### 2.3 Kleinigkeiten
 
