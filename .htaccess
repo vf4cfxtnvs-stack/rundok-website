@@ -4,10 +4,10 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} !^rundok\.de$ [NC]
 RewriteRule ^ https://rundok.de%{REQUEST_URI} [L,R=301]
 
-# HTTPS erzwingen: die zwei Zeilen erst einkommentieren, wenn das SSL-Zertifikat
-# bei IONOS als "aktiv" angezeigt wird, sonst laufen Besucher in eine Zertifikatswarnung.
-# RewriteCond %{HTTPS} off
-# RewriteRule ^ https://rundok.de%{REQUEST_URI} [L,R=301]
+# HTTPS erzwingen. Zertifikat am 08.09.2026 geprueft: Sectigo OV, gueltig bis 06.03.2027,
+# https://rundok.de/ antwortet mit 200. Ohne diese zwei Zeilen war http:// im Klartext erreichbar.
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://rundok.de%{REQUEST_URI} [L,R=301]
 
 # Interne Dateien nie ausliefern. Der Repo-Ordner ist zugleich der Upload-Ordner;
 # ohne diese Sperre waeren README.md (mit IONOS-Vertragsnummer und SFTP-Zugangsdaten)

@@ -12,6 +12,5 @@ p,li{margin:0 0 12px;color:var(--muted)}
 ul{padding-left:20px}
 .adresse{color:var(--text);font-size:18px;line-height:1.7}
 .adresse strong{color:#fff;font-weight:600}
-.todo{background:rgba(212,196,154,.15);color:var(--accent);padding:1px 6px;border-radius:4px;font-size:.92em}
 .hint{margin-top:36px;padding:14px 16px;border:1px dashed var(--border);border-radius:10px;font-size:14px}
 footer{margin-top:60px;padding-top:24px;border-top:1px solid var(--border);font-size:13px;color:var(--faint)}
