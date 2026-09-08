@@ -74,7 +74,7 @@ echte Screenshots** aus `screens/` (siehe Abschnitt 3). Vorschlag:
 - **Abschnitt „Die Kette“:** `03-meldung.png` neben Schritt 1 bis 3.
 
 Bildregeln: dunkler Rahmen wie die Karten, `max-width:100%`, `loading="lazy"`, `alt`-Text
-beschreibend („Kachelwand der Sofort-Meldung mit sechs Symptom-Kacheln“). Keine Schatten
+beschreibend („Kachelwand der Sofort-Meldung mit 18 Symptom-Kacheln“). Keine Schatten
 über die Kartenkante hinaus. Die Bilder sind 1206 × 2622 Pixel; auf der Seite auf 300 bis
 420 Pixel Breite einbinden, damit nichts flimmert.
 
@@ -102,9 +102,10 @@ beschreibend („Kachelwand der Sofort-Meldung mit sechs Symptom-Kacheln“). Ke
 ## 3. Screenshots: was geliefert wird
 
 Ordner `screens/` im Repo. Aufgenommen auf dem iPhone-Simulator (iPhone 17 Pro, iOS 26.5)
-mit dem **Demo-Projekt** „Gartenstraße 12“ des Kunden „HV Bergmann Immobilien“ — erfundene
-Daten, keine echten Objekte, keine echten Firmen, keine Personen auf Fotos. Statusleiste
-auf 09:41 gesetzt, voller Akku, kein Netzbetreibername.
+mit dem **Demo-Projekt „BV Musterstraße“** (Start der App mit `--demo-projekt
+--demo-pruefplan`) — erfundene Daten, kein Kundenname, keine echten Objekte, keine echten
+Firmen, keine Personen auf Fotos. Statusleiste auf 09:41 gesetzt, voller Akku, kein
+Netzbetreibername. Der Prüfplan heißt dort „Demo Zustandsabfrage“, das Gebäude „Demohaus“.
 
 | Datei | Zeigt | Verwendung |
 |---|---|---|
@@ -117,8 +118,12 @@ Eine Ticketliste ist **nicht** dabei: Das Demo-Projekt hat keine Tickets, und ei
 taugt nicht als Werbebild. Wer sie braucht, sendet im Simulator einmal eine Meldung und
 fotografiert die Liste danach.
 
-Werden Screenshots neu gebraucht: `IBWBegehungUITests/DemoVideoTests.swift` beschreibt
-dieselben Wege als Testszenen, `werkzeuge/demovideos.sh` setzt den Simulator auf.
+Werden Screenshots neu gebraucht: App für den Simulator bauen, dann
+`xcrun simctl launch <UDID> de.wildmoser.IBWBegehung --demo-projekt --demo-pruefplan` und
+`xcrun simctl io <UDID> screenshot`. Die Wege durch die Oberfläche stehen als Testszenen in
+`IBWBegehungUITests/DemoVideoTests.swift`; `werkzeuge/demovideos.sh` setzt den Simulator auf
+(Statusleiste, Rechte). Achtung: Der Simulator hat keine Kamera — im Foto-Schritt „Kein Foto
+möglich — ohne Foto weiter“ nehmen.
 
 ---
 
