@@ -167,7 +167,8 @@ footer nav{display:flex;gap:22px}
     <nav class="links">
       <a href="#kette">Die Kette</a>
       <a href="#funktionen">Funktionen</a>
-      <a href="#fuer-wen">Für wen</a>
+      <a href="#mitarbeiten">Mitarbeiten</a>
+        <a href="#fuer-wen">Für wen</a>
       <a href="#ablauf">Ablauf</a>
       <a href="#preise">Preise</a>
     </nav>
@@ -191,7 +192,7 @@ footer nav{display:flex;gap:22px}
         <span>iPhone und Android</span>
         <span>Offline, ohne Nutzerkonto</span>
         <span>Zentrale beim Ingenieurbüro IBW</span>
-        <span>Kein Hosting, keine US-Cloud</span>
+        <span>Kein Portal, kein Fremd-Hosting</span>
       </div>
     </div>
     <div class="phone" aria-hidden="true">
@@ -223,7 +224,7 @@ footer nav{display:flex;gap:22px}
     <p class="lead">Jede Einzelfunktion gibt es irgendwo als App. Die Verkettung vom Foto bis zur Freimeldung, mit Fristenlauf und Rechtsgrundlage, gibt es nur hier.</p>
     <div class="chain">
       <div class="step"><h3>Foto vor Ort</h3><p>Kachel tippen, Foto, ein Satz Diktat. 60 bis 90 Sekunden je Meldung.</p></div>
-      <div class="step"><h3>Befund</h3><p>Mangel, Hinweis oder Empfehlung, mit Dringlichkeit und hinterlegter Rechtsgrundlage.</p></div>
+      <div class="step"><h3>Befund</h3><p>Mangel, Info oder Empfehlung. Am Mangel zusätzlich der Schalter „dringlich“, der im Büro die Ticket-Tafel nach oben sortiert.</p></div>
       <div class="step"><h3>Bericht</h3><p>Aktennotiz als Word, wörtlich oder KI-veredelt im Stil Ihres Büros. Freigabe bleibt beim Menschen.</p></div>
       <div class="step"><h3>Ticket mit Frist</h3><p>Sammel-Mail je Firma, Lageplan je Position, grüner ERLEDIGT-Knopf. Kein Konto für die Firma.</p></div>
       <div class="step"><h3>Mahnung</h3><p>Erinnern mit Nachfrist unter Verweis auf § 4 Abs. 7 und § 8 Abs. 3 VOB/B. Rügebrief nach § 13 Abs. 5.</p></div>
@@ -251,50 +252,58 @@ footer nav{display:flex;gap:22px}
       <p class="intro">Native App für iPhone (SwiftUI) und Android (Kotlin). Läuft komplett offline, Module werden je Kunde freigeschaltet. Einrichtung per QR-Blatt in zehn Minuten.</p>
       <div class="fgrid">
         <div class="f"><h3>Sofort-Meldung über Kacheln</h3><p>Foto, Kategorie, Empfänger, fertig. Symptom-Kacheln je Objekt („Wasser/Bad“, „Weiß nicht“), Ort-Feld wie „Zimmer 214“, Option „kein Foto möglich“. Die App schreibt daraus die fertige Mängel-Mail mit Frist.</p></div>
-        <div class="f"><h3>Schnellmodus und Freihand</h3><p>Kamera mit Zoom 0,5 bis 2x, Auslösen über die Lautstärke-Taste oder Sprachbefehl „Neuer Bereich“, Querformat-Layout für die Begehung mit Helm und Handschuhen.</p></div>
+        <div class="f"><h3>Schnellmodus und Freihand</h3><p>Kamera mit Zoom 0,5 bis 2x, Auslösen über die Lautstärke-Taste, Querformat-Layout für die Begehung mit Helm und Handschuhen. Auf dem iPhone zusätzlich der Sprachbefehl „Neuer Bereich“.</p><div class="note">Sprachbefehl nur iPhone</div></div>
         <div class="f"><h3>SiGeKo-Begehung</h3><p>Befunde mit Foto, Sprach- oder Textnotiz und Verortung im Plan. Rahmen-Markierungen mit Text und Audio, Begehungstipp-Karte, Meldepunkte, Gesamtkommentar. Befundart und Dringlichkeit direkt am Befund.</p></div>
+        <div class="f"><h3>Prüfliste zum Abhaken</h3><p>Das Büro legt den Prüfplan ins Projekt, in der App wird er zur Liste: je Punkt eine Schadensziffer von 0 bis 4, ein Tipp und weiter. Ab Ziffer 2 öffnet sich die Meldung mit der passenden Kachel und fertigem Text. Bei Ziffer 4 fragt die App zuerst, was gesichert oder abgesperrt wurde, und schreibt den Vermerk mit Uhrzeit in die Meldung. Am Ende quittiert ein Tipp die Runde.</p></div>
+        <div class="f"><h3>Pläne und Plan-Pin</h3><p>Die Pläne des Büros liegen im geteilten Ordner und sind ohne Projekt-Paket auf jedem Gerät, mit Klarnamen statt Dateikürzel. Im Plan auf die Stelle tippen: die Meldung öffnet mit genau dieser Planstelle, Datei, Seite und Position reisen ins Ticket. Die Firma bekommt den markierten Ausschnitt in der Mail.</p></div>
         <div class="f"><h3>Ticket-Kreislauf und Sammelliste</h3><p>Jede Meldung wird ein Ticket: offen, erledigt, freigemeldet. Eine Sammelliste je Firma, Positionen einzeln rückmeldbar, Teil-Freimeldung, Erinnerung mit Nachfrist.</p></div>
-        <div class="f"><h3>Kontrollgang-Quittung</h3><p>Ein Tipp am Ende der Runde ist der Positiv-Nachweis: wann, wo (GPS), durch wen. Intervall-Wiedervorlage im Cockpit, „Kontrolle fällig“ bevor es jemand anderes merkt.</p></div>
-        <div class="f"><h3>360°-Rundgang</h3><p>Ricoh Theta Z1 und Insta360 X5 aus der App fernauslösen, Standpunkte im Grundriss, Etagen abarbeiten, Detailfotos im Panorama verorten. Immersiver Pano-Viewer.</p></div>
-        <div class="f"><h3>Grundriss, Lageplan, LiDAR</h3><p>Plan aus Foto, Datei, PDF oder als Kartenausschnitt mit automatischem Maßstab. Auf dem iPhone zusätzlich RoomPlan-Sofortgrundriss, Messfoto (Strecke und Höhe) und Live-3D-Scan mit 2D-Plan-Editor.</p><div class="note">LiDAR und AR nur iPhone Pro</div></div>
+        <div class="f"><h3>Versand-Nachweis</h3><p>Nach jedem Versand hält die App fest, wann welche Meldung an wen ging: Betreff, Kategorie, Ort, Fotos. Auch bei Meldungen, die gar kein Ticket erzeugen. Der Nachweis reist mit ins Büro — im Streitfall ist belegt, dass gemeldet wurde.</p></div>
+        <div class="f"><h3>Kontrollgang-Quittung</h3><p>Ein Tipp am Ende der Runde ist der Positiv-Nachweis: wann, wo (GPS-Standort), wie viele Befunde, auf Wunsch mit Kommentar. Ist im Büro ein Intervall hinterlegt, meldet die Zentrale „Kontrolle fällig“, bevor es jemand anderes merkt.</p></div>
+        <div class="f"><h3>Rückweg mit einem Tipp</h3><p>Am Ende der Runde ein Tipp: das Projekt liegt im Ordner, die Zentrale liest es in Sekunden ein. Kein Hochladen, kein Mailanhang. Umgekehrt zeigt ein Banner, wenn das Büro einen neuen Stand geschickt hat — ein Tipp übernimmt ihn, eigene Fotos und Meldungen bleiben unangetastet.</p></div>
+        <div class="f"><h3>360°-Rundgang</h3><p>Ricoh Theta Z1 und Insta360 X5 aus der App fernauslösen, Standpunkte im Grundriss, Etagen abarbeiten. Immersiver Pano-Viewer; auf dem iPhone lassen sich Detailfotos direkt im Panorama verorten.</p><div class="note">Verorten im Panorama nur iPhone</div></div>
+        <div class="f"><h3>Grundriss, Lageplan, LiDAR</h3><p>Plan aus Foto, Datei, PDF oder als Kartenausschnitt mit automatischem Maßstab. Auf dem iPhone zusätzlich RoomPlan-Sofortgrundriss, Messfoto (Strecke und Höhe) und Live-3D-Scan mit 2D-Plan-Editor.</p><div class="note">Messfoto und Raum-Scan nur iPhone mit LiDAR</div></div>
         <div class="f"><h3>AR-Bauverfolgung</h3><p>Aufnahmepunkt im Raum wiederfinden: Ghost-Overlay des letzten Fotos, Marker- und World-Tracking, Führung auf Zentimeter, Auto-Auslöser. Gleiches Bild, anderer Tag.</p><div class="note">iPhone</div></div>
         <div class="f"><h3>Abnahme und Bautagebuch</h3><p>Förmliches Abnahmeprotokoll mit Firmenwahl und Unterschriften in der App. Bautagebuch aus den GPS-Logbuch-Tagen mit automatischem DWD-Wetter zum Baustellenstandort.</p></div>
-        <div class="f"><h3>Anlagen-Erfassung</h3><p>Barcode oder QR scannen, Typenschild fotografieren. Die Anlagen-KI im Cockpit liest Typ, Hersteller und Kenndaten aus und liefert CSV/XLSX für Archibus oder ein anderes CAFM.</p></div>
-        <div class="f"><h3>Sensorik</h3><p>GPS-Baustellen-Logbuch erkennt die Baustelle und schlägt Kommen/Gehen vor. Kompass-Sichtkegel an den Pins mit Nordkalibrierung. Barometer schlägt die Etage vor.</p></div>
-        <div class="f"><h3>Visitenkarten-Scan und Hilfe</h3><p>Firma per OCR anlegen und sofort als Empfänger nutzen. Eingebaute Hilfe mit 17 Abschnitten, der vollständige Funktionskatalog liegt in der App.</p></div>
+        <div class="f"><h3>Anlagen-Erfassung</h3><p>Barcode oder QR scannen, Typenschild fotografieren. Die Anlagen-KI im Cockpit liest Typ, Hersteller und Kenndaten aus und liefert CSV/XLSX für Archibus oder ein anderes CAFM.</p><div class="note">iPhone</div></div>
+        <div class="f"><h3>Sensorik</h3><p>GPS-Baustellen-Logbuch erkennt die Baustelle und schlägt Kommen/Gehen vor. Kompass-Sichtkegel an den Pins mit Nordkalibrierung. Barometer schlägt die Etage vor.</p><div class="note">iPhone</div></div>
+        <div class="f"><h3>Visitenkarten-Scan und Hilfe</h3><p>Firma per OCR anlegen und sofort als Empfänger nutzen. Eingebaute Hilfe mit 17 Abschnitten, der vollständige Funktionskatalog liegt in der App.</p><div class="note">Scan nur iPhone</div></div>
       </div>
     </div>
 
     <div class="panel" id="tab-cockpit">
       <p class="intro">Das Cockpit ist die Zentrale hinter der App und wird vom Ingenieurbüro IBW betrieben, nicht in einer Cloud, sondern auf unseren Rechnern in München. Sie bekommen keine Software zum Verwalten, sondern Berichte, Tickets und Nachweise. Was das Cockpit für Sie leistet:</p>
       <div class="fgrid">
-        <div class="f"><h3>Import ohne Handarbeit</h3><p>Projekt-Pakete kommen per AirDrop, geteilten Kundenordner (iCloud, OneDrive, Google Drive) oder Sync-Ordner. Ein Wächter übernimmt neue Stände automatisch und führt zusammen statt zu überschreiben.</p></div>
+        <div class="f"><h3>Import ohne Handarbeit</h3><p>Projekt-Pakete kommen über Ihren geteilten Ordner (iCloud für iPhone, Google Drive für Android) oder per AirDrop. Ein Wächter übernimmt neue Stände automatisch und führt zusammen statt zu überschreiben.</p></div>
+        <div class="f"><h3>Alle Objekte auf einem Schirm</h3><p>Wir sehen Ihre Objekte nebeneinander: überfällige Tickets, Gewährleistung unter sechs Monaten, überzogene Kontrollgänge, offene Antworten von Firmen. Das ist der Grund, warum die Zentrale bei uns liegt: Sie müssen niemanden abstellen, der jeden Montag Fristen nachhält.</p></div>
         <div class="f"><h3>Grundriss und Messen</h3><p>Standpunkte und Pins auf dem Plan, Etagen, Georeferenzierung über zwei Passpunkte, Strecken und Flächen messen, Plan tauschen mit Übernahme aller Punkte. Lageplan aus OpenStreetMap mit automatischem Maßstab.</p></div>
         <div class="f"><h3>Zeitstände vergleichen</h3><p>360°-Panoramen zweier Termine gekoppelt nebeneinander, manuell oder automatisch ausgerichtet. Der Veränderungsbericht beschreibt, was sich zwischen A und B getan hat.</p></div>
+        <div class="f"><h3>Zustandsblatt über die Jahre</h3><p>Jeder Prüfpunkt bekommt je Begehung eine Ziffer von 0 bis 4. Das Zustandsblatt stellt alle Punkte allen Runden gegenüber, farbig nach VDI 6200. Was sich seit der letzten Runde verschlechtert hat, steht oben. So sieht man nach drei Jahren, welcher Riss gewandert ist und welcher nicht.</p></div>
         <div class="f"><h3>Prüfstand</h3><p>Befunde durchklicken, umformulieren, Befundart per Tastendruck setzen, Vorbefunde auf offen oder behoben. Der Rücklauf fließt direkt in den Bericht.</p></div>
         <div class="f"><h3>Ticket-Tafel und Postfach-Wächter</h3><p>Sammelkorb je Firma, Sammel-Mail mit Fristabfrage und Lageplan je Position. Der Wächter liest das Ticket-Postfach minütlich, ordnet Antworten zu, erkennt Teil-Erledigungen und parkt Unbekanntes.</p></div>
         <div class="f"><h3>Gewährleistungstafel</h3><p>Ampel über alle Objekte mit zwei Fristebenen (Nachunternehmer nach VOB, Erwerber nach BGB) und Warnung „Regresslücke“, wenn die eine Frist vor der anderen abläuft.</p></div>
-        <div class="f"><h3>Termin-Agent</h3><p>Terminplan als .mpp importieren, Stichtag setzen, Prüf-Aufträge als Tafel, PDF oder Mail an die Feld-App: „überprüfen und melden“.</p></div>
+        <div class="f"><h3>Termin-Agent</h3><p>Terminplan als .mpp importieren, Stichtag setzen. Daraus entstehen Prüf-Aufträge mit Frist, die mit dem Projekt auf die Geräte Ihrer Leute wandern: „überprüfen und melden“, ein Tipp, und die Meldung ist unterwegs. Die Übersicht bekommen Sie als PDF oder Mail.</p></div>
         <div class="f"><h3>Plan-Ordner mit Revisionierung</h3><p>PDF-Pläne im geteilten Ordner, KI liest den Plankopf aus, Vorschaubilder, Kunden-Upload mit automatischer Revisionierung.</p></div>
         <div class="f"><h3>Kunden-Einrichtung</h3><p>Ordnerbau, APK-Ablage, Einrichtungs-QR und TestFlight-QR, Ampel mit sieben Prüfpunkten, Übergabeprotokoll als PDF. Paket-Freischaltung je Kunde, signiert.</p></div>
-        <div class="f"><h3>Bildergalerie mit Verpixelung</h3><p>Personen werden automatisch verpixelt, Bereiche lassen sich zusätzlich abdecken. Wichtig für Fotos in belegten Zimmern und Wohnungen.</p></div>
+        <div class="f"><h3>Personen unkenntlich machen</h3><p>Gesichter und Personen verpixeln wir je Foto auf Knopfdruck; erkennt die Automatik nichts, ziehen wir den Bereich von Hand auf. Das Original bleibt gesichert und ist wiederherstellbar. Wichtig für Fotos in belegten Zimmern und Wohnungen.</p></div>
         <div class="f"><h3>Betrieb durch IBW</h3><p>Einrichtung, Pflege der Kataloge, Überwachung der Tickets und Freigabe der Berichte laufen bei uns. Sie brauchen weder Server noch Administrator, nur die App auf den Geräten Ihrer Leute.</p></div>
-        <div class="f"><h3>Kontakte, Leads, Stammliste</h3><p>Kunden-Stammliste aus CSV oder Foto/Scan per KI, Kontakte, Lead-Tafel. Alles lokal, alles exportierbar.</p></div>
+        <div class="f"><h3>Kontakte und Stammliste</h3><p>Firmen mit E-Mail je Objekt, Kundenstammdaten aus CSV oder von einer abfotografierten Liste. Alles liegt als Klartext-Datei bei uns und geht jederzeit als Export an Sie. Beim Auslesen eines Fotos läuft eine Texterkennung über einen externen KI-Dienst — wer das nicht will, gibt die Liste als CSV.</p></div>
       </div>
     </div>
 
     <div class="panel" id="tab-berichte">
-      <p class="intro">Berichte sind Entwürfe im Layout Ihres Büros. Geprüft und freigegeben wird von einem Menschen, dann trägt der Bericht den Stempel „Freigegeben am … durch …“.</p>
+      <p class="intro">Berichte sind Entwürfe. Geprüft und freigegeben wird von einem Menschen; die SiGe-Aktennotiz trägt danach in der Kopfzeile „Freigegeben am … durch …“ und den Briefkopf des Büros, das sie herausgibt. Die übrigen Berichte nennen im Fuß, aus welchem Prüfgang und welcher Planfassung sie stammen.</p>
       <div class="fgrid">
         <div class="f"><h3>SiGe-Aktennotiz als Word</h3><p>Wahlweise wörtlich (nichts verlässt den Rechner) oder KI-veredelt in einem Stilprofil, das aus Ihren Altberichten abgeleitet und an Ihren Korrekturen nachgeschärft wird. Sprachnotizen werden lokal transkribiert.</p></div>
-        <div class="f"><h3>Freigabe-Stempel und Versionskette</h3><p>Jede Fassung ist nummeriert, in Kopfzeile und Word-Metadaten. Frühere Fassungen bleiben im Archiv lesbar. Bewusst „freigegeben“, nicht „versiegelt“: die Verantwortung bleibt beim Fachmann.</p></div>
+        <div class="f"><h3>Freigabe-Stempel und Versionskette</h3><p>Die Aktennotiz ist in jeder Fassung nummeriert, in der Kopfzeile und in den Word-Eigenschaften. Vorfassungen wandern ins Archiv und bleiben lesbar, auch die der PDF-Berichte. Bewusst „freigegeben“, nicht „versiegelt“: die Verantwortung bleibt beim Fachmann.</p></div>
         <div class="f"><h3>Vorbefunde</h3><p>Offene Punkte früherer Aktennotizen erscheinen mit Datum der Erstfeststellung automatisch in der nächsten Begehung. Niemand fängt bei null an.</p></div>
         <div class="f"><h3>Rügebrief nach § 13 Abs. 5 VOB/B</h3><p>Aus der Gewährleistungs-Schlussbegehung entsteht der Entwurf für das Einwurf-Einschreiben. Redaktion und Versand bleiben bei IBW oder Ihrem Büro, nichts geht ungeprüft raus.</p></div>
         <div class="f"><h3>Weitere Berichte</h3><p>Veränderungsbericht (zwei Zeitstände), Gesamtbericht, Verlaufsbericht mit Gewerke-Zeitleiste, Gewerke-Fortschritt über Räume und Zeiträume, Zustandsblatt, Zustandsabfrage als PDF, Abnahmeprotokoll, Bautagebuch mit Wetter.</p></div>
+        <div class="f"><h3>Amtliche Baucheckliste der Erzdiözese</h3><p>Kirchenstiftungen geben das amtliche Formblatt ihrer Erzdiözese ab. Aus derselben Begehung füllen wir es aus: Blöcke I bis IV mit 48 Zeilen, ja/nein, Zustand –/o/+, Unterschriftsfelder. Eine Anlage zeigt, aus welchem Prüfpunkt jedes Kreuz stammt. Vor der Abgabe ans Bauamt prüft ein Mensch die Kreuze.</p></div>
+        <div class="f"><h3>Zustandsbericht mit Vorjahresvergleich</h3><p>Der Bericht zur Zustandsabfrage: Zusammenfassung nach Ziffern, Verschlechterungen zuerst, Befunde mit Foto und Ticket, Rechtsgrundlage am Befund mit Link zur Fundstelle und als Anhang. Das Blatt für die Sitzung der Kirchenverwaltung oder des Gemeinderats.</p></div>
         <div class="f"><h3>Mahnwesen mit Rechtsbezug</h3><p>„Erinnern“ setzt eine Nachfrist und verweist auf § 4 Abs. 7 und § 8 Abs. 3 VOB/B. „Freimelden“ geht an Firma und Bauherrn. Versandnachweis auch für ticketlose Meldungen.</p></div>
         <div class="f"><h3>Bericht mailen</h3><p>Direkt aus dem Cockpit per SMTP, mit BCC und Versandvermerk im Projekt. Briefkopf je Kunde.</p></div>
         <div class="f"><h3>Rohdaten-Export</h3><p>Komplettes Projekt als ZIP (mit oder ohne Medien), Tickets, Befunde und Prüfpunkte als CSV. Ihre Daten bleiben auch nach Vertragsende lesbar.</p></div>
-        <div class="f"><h3>Nachweis-Paket</h3><p>Monats- oder Jahresbericht je Objekt: Runden, Quittungen, Meldungen, Erledigungen. Der Ordner für Versicherer, Eigentümerversammlung und Gericht.</p></div>
+        <div class="f"><h3>Nachweis-Paket</h3><p>Zum Monats- oder Jahresende stellen wir je Objekt zusammen, was belegt ist: gelaufene Runden mit Quittung, Meldungen, Fristen, Erledigungen. Der Ordner für Versicherer, Eigentümerversammlung und Gericht.</p><div class="note">Leistung der Zentrale, kein Knopf in der App</div></div>
       </div>
     </div>
 
@@ -311,7 +320,9 @@ footer nav{display:flex;gap:22px}
         <div class="f"><h3>Kirchenstiftung Jahresbegehung</h3><p>Dach und Entwässerung, Dachraum und Turm, Fassade, Innenräume, Orgel und Glocken, technische Anlagen, Rettungswege und Außenanlagen, Unterlagen und Prüffristen. Bewertung nach Schadensziffer und VDI-Ampel.</p></div>
         <div class="f"><h3>Gewährleistung Schlussbegehung</h3><p>Fassade, Dach, Balkone, Keller und Tiefgarage, Allgemeinflächen, Fenster und Türen, Haustechnik, Außenanlagen, Abgleich der Unterlagen. Zweck: Schlussbegehung vor Ablauf der Verjährungsfrist, Rüge nach § 13 Abs. 5 VOB/B.</p></div>
         <div class="f"><h3>Belegte Rechtsgrundlagen</h3><p>VOB/B § 4 Abs. 2 und 7, § 8 Abs. 3, § 13 Abs. 5; § 3 BaustellV; DGUV V3, V52, 203-006, 208-016; TRGS 519; LärmVibrationsArbSchV; ASR; BetrSichV § 14; DIN 14677; DIN EN 15635; TrinkwV; VDI 6200.</p></div>
-        <div class="f"><h3>Kachel statt Fachbegriff</h3><p>Ihre Leute tippen „Wasser/Bad“ oder „Weiß nicht“. Welche Firma, welche Frist, welcher Rechtstext, das steckt in der Kachel. Niemand vor Ort muss etwas juristisch einordnen.</p></div>
+        <div class="f"><h3>Ein Prüfplan, mehrere Sichten</h3><p>Der Kirchenstiftungs-Prüfplan bedient alle 48 Zeilen der amtlichen Baucheckliste und geht darüber hinaus. Wer nur die amtliche Liste will, bekommt sie aus demselben Plan: die übrigen Punkte schalten wir für dieses Objekt aus. Kein zweiter Katalog, keine neue App-Fassung.</p></div>
+        <div class="f"><h3>Alte Runden bleiben alt</h3><p>Ändert sich ein Prüfplan, frieren wir die vorige Fassung ein. Eine Begehung von 2024 wird nach dem Wortlaut von 2024 gelesen, nicht nach dem von heute. Punkte, die es am Objekt nicht gibt, werden ausgemustert, nie gelöscht — das ist der Unterschied zwischen einer Liste und einem Nachweis.</p></div>
+        <div class="f"><h3>Kachel statt Fachbegriff</h3><p>Ihre Leute tippen „Wasser/Bad“ oder „Weiß nicht“. Welche Firma, welche Frist und welcher Text an sie hinausgeht, steckt in der Kachel. Die Rechtsgrundlage steht am Prüfpunkt und im Bericht. Niemand vor Ort muss etwas juristisch einordnen.</p></div>
         <div class="f"><h3>Textbuch und Katalogverteilung</h3><p>Textbausteine für Betreff, Einleitung und Schluss je Kachel. Katalog-Editor, Verteilung in Projekte, Textbuch als PDF zum Abstimmen mit dem Kunden.</p></div>
       </div>
     </div>
@@ -319,14 +330,33 @@ footer nav{display:flex;gap:22px}
     <div class="panel" id="tab-daten">
       <p class="intro">Was kaufmännisch zählt: keine Cloud-Gebühren, kein Preis je Nutzer, unbegrenzt Firmen und Nachunternehmer ohne Aufpreis, Ihre Daten nach Vertragsende als Export lesbar.</p>
       <div class="fgrid">
-        <div class="f"><h3>Deutschland statt Cloud</h3><p>Das Cockpit läuft beim Ingenieurbüro IBW in München, die App auf Ihren Geräten. Austausch über einen geteilten Kundenordner (iCloud, OneDrive, Google Drive). Keine US-Cloud, kein Fremd-Hosting, kein Plattform-Betreiber dazwischen.</p></div>
+        <div class="f"><h3>Deutschland statt Plattform</h3><p>Das Cockpit läuft beim Ingenieurbüro IBW in München, die App auf Ihren Geräten. Austausch über einen geteilten Ordner, den Sie besitzen: iCloud für iPhone-Geräte, Google Drive für Android. Kein Portal, kein Fremd-Hosting, kein Plattform-Betreiber dazwischen.</p></div>
         <div class="f"><h3>Kein Konto, kein Nutzerpreis</h3><p>Weder Ihre Leute noch die Handwerksfirmen brauchen ein Konto. Die Firma bekommt eine Mail mit grünem Knopf. Beliebig viele Melder, beliebig viele Firmen.</p></div>
         <div class="f"><h3>Fotos mit Hausregel</h3><p>Nur der Mangel, keine Personen, keine Gegenstände. Automatische Personen-Verpixelung in der Galerie, Bereichs-Verpixelung von Hand.</p></div>
+        <div class="f"><h3>Ortsdaten: eng gefasst</h3><p>Die App bucht einen Standort nur bei einer echten Feld-Aktion und nur im Umkreis des Objekts. Nacharbeit im Büro landet nicht im Logbuch, bloßes Ansehen nie. Die Quittung hält Zeit und Ort der Runde fest, keine Bewegungsspur Ihrer Leute.</p></div>
         <div class="f"><h3>Transkription auf dem Gerät</h3><p>Sprachnotizen werden lokal in Text gewandelt. KI-Veredelung des Berichts ist optional und abschaltbar, die wörtliche Aktennotiz verlässt den Rechner nicht.</p></div>
         <div class="f"><h3>Alles exportierbar</h3><p>Projekt-ZIP, CSV, Word, PDF. Datenverträge sind dokumentiert und additiv: nichts wird stillschweigend überschrieben.</p></div>
+        <div class="f"><h3>Kein Datenbank-Gefängnis</h3><p>Ein Projekt ist ein Ordner: Fotos als JPG, alles andere als lesbare Textdateien. Tickets, Befunde, Quittungen, Fristen. Kein eigenes Format, kein Konverter, keine Lizenz zum Öffnen. Was Sie exportieren, können Sie in zehn Jahren noch lesen.</p></div>
+        <div class="f"><h3>Wo KI mitläuft und wo nicht</h3><p>KI läuft bei uns im Büro, an fünf Stellen: Bericht im Stil Ihres Hauses, Plankopf auslesen, Typenschilder von Anlagen, Vergleich zweier 360°-Zeitstände, Firmenliste aus einem Foto. Jede davon ist ein Knopf, keine Automatik. Ehrlich dazu: Der KI-Dienst sitzt in den USA, eine EU-Region ist nicht zugesichert. Wer das nicht will, bekommt den wörtlichen Bericht — der entsteht vollständig auf unserem Rechner.</p></div>
         <div class="f"><h3>Signierte Konfiguration</h3><p>Die App-Konfiguration je Kunde ist HMAC-signiert. Module lassen sich je Kunde freischalten oder abschalten.</p></div>
       </div>
     </div>
+  </div>
+</section>
+
+
+<section class="section" id="mitarbeiten">
+  <div class="wrap">
+    <div class="eyebrow">Mitarbeiten</div>
+    <h2>Sie bekommen kein Programm, sondern ein Blatt.</h2>
+    <p class="lead">Die Zentrale bleibt beim Ingenieurbüro IBW — das ist kein Zurückhalten, sondern der Grund, warum Sie niemanden schulen, nichts installieren und nichts administrieren müssen. Wo Sie trotzdem mitarbeiten wollen, schicken wir Ihnen ein Blatt: eine einzelne Datei in Ihrem Ordner. Doppelklick, kein Konto, kein Login. Was Sie darin ändern, kommt über denselben Ordner zurück und steht im nächsten Bericht.</p>
+    <div class="fgrid">
+      <div class="f"><h3>Befunde prüfen und umformulieren</h3><p>Alle Befunde einer Begehung als Blatt: durchklicken, Text ändern, Mangel oder Hinweis setzen, Vorbefunde auf erledigt stellen. Speichern legt eine Datei in Ihrem Ordner ab. Daraus entsteht bei uns der Bericht mit Ihren Entscheidungen — ohne dass jemand etwas abtippt.</p></div>
+      <div class="f"><h3>Pläne selbst nachlegen</h3><p>Neue oder geänderte Pläne legen Sie in den Ordner. Wir lesen den Plankopf aus, vergeben die Revision und schieben sie auf die Geräte Ihrer Leute. Die alte Fassung bleibt auffindbar.</p></div>
+      <div class="f"><h3>Freimelden ohne Zugang</h3><p>Ihre Firmen antworten auf die Mängel-Mail oder drücken den grünen Knopf. Das Postfach der Zentrale ordnet die Antwort dem Ticket zu und erkennt, wenn nur ein Teil erledigt ist. Kein Portal, kein Passwort, keine Einweisung.</p></div>
+      <div class="f"><h3>Berichte im Word korrigieren</h3><p>Sie schreiben im Bericht, wie Sie es formuliert hätten. Wir übernehmen die Korrektur nicht nur einmal, sondern lernen Ihren Schreibstil daraus — der nächste Entwurf klingt schon nach Ihrem Haus.</p></div>
+    </div>
+    <p class="lead" style="margin-top:22px">Nach demselben Muster lassen sich weitere Aufgaben auslagern, sobald Sie sie brauchen: die eigene Ticket-Tafel mit Erinnern und Freimelden, die Gewährleistungsfristen, das Abstimmen eines Prüfplans vor der Runde. Wir bauen ein Blatt, wenn es bestellt ist — nicht auf Vorrat.</p>
   </div>
 </section>
 
@@ -336,12 +366,12 @@ footer nav{display:flex;gap:22px}
     <h2>Für alle, die Dritte mit Frist mahnen müssen.</h2>
     <p class="lead">Wenn morgen jemand in Ihrer Anlage auf Glatteis stürzt: können Sie belegen, wann dort zuletzt kontrolliert wurde? Wie viele Ihrer Objekte aus 2021 haben noch laufende Gewährleistung, und wann genau läuft sie ab?</p>
     <div class="aud">
-      <div class="f"><h3>Kirchenstiftungen und Diözesen</h3><p>Jahresbegehung nach Prüfplan mit 64 Punkten, Stufe Eigenkontrolle oder Fachbegehung, Prüffristen für Aufzug, Elektro, Blitzschutz, Feuerlöscher im Blick.</p></div>
+      <div class="f"><h3>Kirchenstiftungen und Diözesen</h3><p>Jahresbegehung nach Prüfplan mit 75 Punkten, Stufe Eigenkontrolle oder Fachbegehung, Prüffristen für Aufzug, Elektro, Blitzschutz, Feuerlöscher im Blick.</p></div>
       <div class="f"><h3>Kommunen und Liegenschaften</h3><p>Bauhof, Schulen, Kitas, Friedhof: Kontrollgang-Quittung als Verkehrssicherungs-Nachweis, Meldekataloge für Liegenschaften und Friedhof.</p></div>
       <div class="f"><h3>Hausverwaltung und WEG</h3><p>Hausmeister melden per Kachel, die Vertragsfirma bekommt Ticket und Frist, die Zentrale mahnt. Gewährleistungs-Inventur je Abnahme-Jahrgang als Ampel-Liste.</p></div>
       <div class="f"><h3>Bauherren und SiGeKo</h3><p>SiGeKo-Begehung mit Aktennotiz, Mängelrüge nach VOB/B, Bautagebuch, 360°-Bauverfolgung, Termin-Agent aus dem Bauzeitenplan.</p></div>
       <div class="f"><h3>Betreiber und Hotels</h3><p>Betreiberpflichten Gewerbe, Hotelbetrieb mit Symptom-Kacheln für Haustechnik und Housekeeping, Wachdienst und Gebäudereinigung als eigene Kataloge.</p></div>
-      <div class="f"><h3>Technical Due Diligence</h3><p>Beweissicherung Bestand mit 360°-Zeitständen, LiDAR-Messfotos und Zustandsblatt je Raum.</p></div>
+      <div class="f"><h3>Technical Due Diligence</h3><p>Beweissicherung im Bestand: 360°-Zeitstände desselben Standpunkts, Messfotos mit eingebranntem Maß (iPhone mit LiDAR) und das Zustandsblatt — jeder Prüfpunkt über alle Begehungen hinweg, Verschlechterungen zuoberst.</p></div>
     </div>
   </div>
 </section>
