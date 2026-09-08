@@ -10,7 +10,7 @@ entscheiden.
 
 Repo: `vf4cfxtnvs-stack/rundok-website` (privat) · Domain rundok.de · Hosting IONOS, statisch.
 
-**Ausgangsstand: Commit `AUSGANGSSTAND` auf `main`.** Der beiliegende Patch setzt genau
+**Ausgangsstand: Commit `a527c16` auf `main`.** Der beiliegende Patch setzt genau
 diesen Stand voraus. Ist Ihr Arbeitsbaum weiter, prüfen Sie mit `git apply --check`, bevor
 Sie anwenden.
 
