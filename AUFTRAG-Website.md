@@ -78,12 +78,10 @@ beschreibend („Kachelwand der Sofort-Meldung mit 18 Symptom-Kacheln“). Keine
 über die Kartenkante hinaus. Die Bilder sind 1206 × 2622 Pixel; auf der Seite auf 300 bis
 420 Pixel Breite einbinden, damit nichts flimmert.
 
-### 2.2 Drei Entscheidungen von Bernd
+### 2.2 Entscheidungen
 
-1. **Name und Domain.** Im Repo steht durchgehend `rundok.de`, das Logo ist RUN + DOK.
-   Bernd spricht von „run-dog.de“. Solange das nicht entschieden ist: nichts umbenennen.
-   Fällt die Entscheidung auf Run-Dog, sind Domain, Logo-SVGs, `.htaccess`, `README.md`,
-   `sitemap.xml`, Impressum und alle Fließtexte anzupassen.
+1. **Name und Domain: entschieden.** Es bleibt **rundok.de**, Marke RUNDOK, Logo RUN + DOK
+   (Bernd am 08.09.2026). Nichts umbenennen; „run-dog“ war nur die Aussprache im Diktat.
 2. **„Angebot binnen 48 Stunden“** im Preisteil ist eine Selbstverpflichtung ohne
    Vorbehalt. Entweder halten wollen oder auf „innerhalb weniger Tage“ ändern.
 3. **Prüfstand-Kachel** steht im Reiter „Cockpit“, obwohl der Kunde dort klickt. Seit es
