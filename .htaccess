@@ -9,6 +9,14 @@ RewriteRule ^ https://rundok.de%{REQUEST_URI} [L,R=301]
 # RewriteCond %{HTTPS} off
 # RewriteRule ^ https://rundok.de%{REQUEST_URI} [L,R=301]
 
+# Interne Dateien nie ausliefern. Der Repo-Ordner ist zugleich der Upload-Ordner;
+# ohne diese Sperre waeren README.md (mit IONOS-Vertragsnummer und SFTP-Zugangsdaten)
+# und UEBERGABE-Website.md oeffentlich unter rundok.de/README.md abrufbar.
+<FilesMatch "\.(md|patch)$">
+  Require all denied
+</FilesMatch>
+RedirectMatch 404 ^/\.git
+
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
